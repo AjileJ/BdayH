@@ -2,14 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
+.App-giffy {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-giffy {
+    animation: App-giffy-spin infinite 20s linear;
   }
 }
 
@@ -27,12 +27,96 @@
 .App-link {
   color: #61dafb;
 }
+@font-face {
+  font-family: 'Pacifico';
+}
 
-@keyframes App-logo-spin {
+@keyframes App-giffy-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@keyframes birthday {
+  0%   {background-color: red;}
+  1%  {background-color: pink;}
+  3%  {background-color: blue;}
+  5% {background-color: gold;}
+  7%   {background-color: red;}
+  10%  {background-color: pink;}
+  15%  {background-color: blue;}
+  17% {background-color: green;}
+  20%   {background-color: gold;}
+  23%  {background-color: pink;}
+  25%  {background-color: blue;}
+  27% {background-color: black;}
+  30%   {background-color: red;}
+  35%  {background-color: pink;}
+  37%  {background-color: blue;}
+  40% {background-color: white;}
+  43%   {background-color: red;}
+  45%  {background-color: pink;}
+  50%  {background-color: purple;}
+  52% {background-color: green;}
+  53%   {background-color: red;}
+  57%  {background-color: teal;}
+  60%  {background-color: blue;}
+  63% {background-color: green;}
+  65%   {background-color: orange;}
+  68% {background-color: green;}
+  70%  {background-color: pink;}
+  73%  {background-color: blue;}
+  75% {background-color: siler;}
+  79%   {background-color: red;}
+  81%  {background-color: pink;}
+  83%  {background-color: blue;}
+  85% {background-color: peach;}
+  87%   {background-color: red;}
+  90%  {background-color: pink;}
+  92%  {background-color: blue;}
+  94% {background-color: peachpuff;}
+  98%   {background-color: red;}
+  100% {background-color: green;}
+}
+
+/* The element to apply the animation to */
+html {
+  
+  background-color: maroon;
+  animation-name: birthday;
+  animation-duration: 60s;
+}
+
+.ctx {
+  text-align: center;
+  font-family: 'pacifico', cursive;
+  font-size: 300%;
+ 
+}
+.imger {
+  width: 30%;
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 25px;
+  color: red;
+  border-radius: 10px;
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 85px;
+}
+.giffy {
+  margin: 5%;
+}
+.spinner {
+  display: flex;
+  justify-content: space-evenly;
 }
